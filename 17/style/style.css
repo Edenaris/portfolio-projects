@@ -1,0 +1,261 @@
+@import url(style.css);
+*{
+
+    box-sizing: border-box;
+}
+body {
+    font-family: "Alegreya", serif;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 7%;
+    margin-top: 40px;
+    width: 100%;
+}
+.logo {
+    color: rgb(188, 67, 106);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+.nav-links a {
+    color: #666;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    color: rgb(188, 67, 106);
+}
+.book-guide {
+    background-color: #2E6F3E;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.book-guide:hover {
+    background-color: #24512E;
+}
+@media(max-width:1000px)  {
+    header{
+        justify-content: space-between;
+        margin-top: 40px;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0px 0px;
+    }
+}
+
+  
+
+.hero-section {
+    height: 95vh;
+    width: 100%;
+    background: url("../img/Image.png") no-repeat center center;
+    background-size: 45%;
+    background-position: 110% center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+  
+  
+.content {
+    padding-left: 7%;
+    position: absolute;
+    top: 130px;
+    width: 30%;
+}
+  
+.content h1 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 49px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+  
+.highlight {
+    color: #d42a65; 
+}
+  
+.content p {
+    color: rgb(122, 122, 122);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+  
+ 
+
+.green-box {
+    position: absolute;
+    top: 50%; 
+    left: -25px;  
+    width: 120px;
+    height: 120px;
+    border: 10px solid rgb(56, 110, 65);
+    background-color: transparent; 
+}
+  
+
+ 
+.search-section {
+    position: absolute;
+    top: 70%; 
+    padding-left: 5%;
+    width: 90%;
+    height: 100px;
+}
+  
+.search-section p {
+    color: rgb(118, 118, 118);
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+  
+
+  
+
+.dropdowns {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: #2d6a4f; 
+    padding: 1rem;
+    border-radius: 8px;
+    height: 100%;
+    justify-content: space-around;
+}
+  
+  
+select {
+    appearance: none; 
+    background: transparent;
+    color: #fff;
+    border: none;
+    
+    outline: none;
+    width: 200px; 
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Avenir;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+.select-wrapper{
+    border-bottom: 1px solid #fff; 
+}
+
+  
+.search-section span{
+    margin-left: 3%;
+    color: rgb(118, 118, 118);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+button {
+    border-radius: 4px;
+    padding-left: 18px;
+    background: rgb(188, 67, 106);
+    border: none;
+    border-radius: 3px;
+    width: 145px;
+    height: 41px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+  
+button:hover {
+    background-color: #b12556;
+}
+.select-wrapper:nth-child(1) i  {
+
+    color: #fff; 
+    pointer-events: none; 
+}
+.select-wrapper:nth-child(2) i  {
+
+    color: #fff; 
+    pointer-events: none; 
+}
+.select-wrapper:nth-child(3) i  {
+
+    color: #fff; 
+    pointer-events: none; 
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: rgb(118, 118, 118);
+    font-family: Avenir;
+    font-size: 18px;
+}
+  
+.footer-text {
+    color: rgb(118, 118, 118);
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+@media(max-width:1000px)  {
+    .content {
+        padding-left: 5%;
+        position: absolute;
+        top: 130px;
+        width: 65%;
+    }
+    .dropdowns{
+        flex-wrap: wrap;
+        height: 200%;
+    }
+    .green-box{
+        display: none;
+    }
+    .hero-section{
+        height: 112vh;
+    }
+}
+
+  
